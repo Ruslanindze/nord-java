@@ -1,0 +1,7 @@
+spring:
+  main:
+    web-application-type: none
+
+app:
+  url: http://localhost:8080
+  x-api-key: ${X_API_KEY:UNKNOWN}

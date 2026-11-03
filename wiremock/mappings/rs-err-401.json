@@ -1,0 +1,22 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/auth|/doAction",
+    "bodyPatterns": [
+      {
+        "matches": ".*token=[0-9A-Z]*ERR401(&.*|$)"
+      }
+    ]
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "result": "ERROR",
+      "message": "Unauthorized"
+    }
+  }
+}

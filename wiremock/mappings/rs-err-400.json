@@ -1,0 +1,22 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/auth|/doAction",
+    "bodyPatterns": [
+      {
+        "matches": ".*token=[0-9A-Z]*ERR400(&.*|$)"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "result": "ERROR",
+      "message": "Invalid token format"
+    }
+  }
+}

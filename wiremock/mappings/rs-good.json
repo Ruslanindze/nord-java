@@ -1,0 +1,21 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "POST",
+    "urlPattern": "/auth|/doAction",
+    "bodyPatterns": [
+      {
+        "matches": ".*token=[0-9A-Z]{32}.*"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "result": "OK"
+    }
+  }
+}

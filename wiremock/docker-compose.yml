@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  wiremock:
+    image: wiremock/wiremock:3.13.2
+    container_name: nord-mock
+    ports:
+      - "8888:8080"
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+      - ./__files:/home/wiremock/__files
+    command: --verbose --global-response-templating
