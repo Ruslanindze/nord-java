@@ -5,7 +5,7 @@
     "urlPattern": "/auth|/doAction",
     "bodyPatterns": [
       {
-        "matches": ".*token=[0-9A-Z]*ERR503(&.*|$)"
+        "matches": ".*token=[0-9A-Z]*BAD503(&.*|$)"
       }
     ]
   },

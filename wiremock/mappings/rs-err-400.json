@@ -5,7 +5,7 @@
     "urlPattern": "/auth|/doAction",
     "bodyPatterns": [
       {
-        "matches": ".*token=[0-9A-Z]*ERR400(&.*|$)"
+        "matches": ".*token=[0-9A-Z]*BAD400(&.*|$)"
       }
     ]
   },
@@ -16,7 +16,7 @@
     },
     "jsonBody": {
       "result": "ERROR",
-      "message": "Invalid token format"
+      "message": "Bad Request"
     }
   }
 }
