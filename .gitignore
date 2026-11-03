@@ -37,3 +37,4 @@ out/
 .vscode/
 
 nord-java.iml
+/target/
