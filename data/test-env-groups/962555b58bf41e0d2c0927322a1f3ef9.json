@@ -1,0 +1,1 @@
+{"id":"962555b58bf41e0d2c0927322a1f3ef9","fullName":"nord.codes.tests.EndpointLoginTest$NegativeLogin.shouldReturnClientErrorWhenLoggingInWithDuplicateToken","name":"Токен уже авторизован","status":"passed","testResultsByEnv":{"default":"dc81662c532d62653376b2a99fd7bdc7"}}

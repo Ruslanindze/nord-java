@@ -1,0 +1,1 @@
+{"id":"29fdb6aa935f4520421b94e8de9b7408","fullName":"nord.codes.tests.EndpointLogoutTest$PositiveLogout$NegativeLogout.shouldReturnClientErrorWhenSessionIsAlreadyClosed","name":"Завершение сессии с не авторизованным токеном","status":"passed","testResultsByEnv":{"default":"24ca79bd88d63cbb3734e4451a7eb585"}}

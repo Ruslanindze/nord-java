@@ -1,0 +1,1 @@
+{"id":"649ac33cfcdf3e8bc34e4a0342f67ab7","fullName":"nord.codes.tests.EndpointLoginTest$NegativeLogin.shouldReturnServerErrorWhenLoggingInWithValidToken","name":"Ошибка сервера FE61CAABB5C34AC2877389D4D5BAD500","status":"passed","testResultsByEnv":{"default":"96e8d0fc5719407fe048383a05b15b3e"}}

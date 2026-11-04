@@ -1,0 +1,1 @@
+EndpointRs(result=ERROR, message=action: invalid action 'OTHER_ACTION'. Allowed: LOGIN, LOGOUT, ACTION)

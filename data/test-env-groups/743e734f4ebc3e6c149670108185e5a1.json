@@ -1,0 +1,1 @@
+{"id":"743e734f4ebc3e6c149670108185e5a1","fullName":"nord.codes.tests.EndpointLoginTest$NegativeLogin.shouldReturnClientErrorWhenLoggingInWithNullToken","name":"Токен равен null","status":"passed","testResultsByEnv":{"default":"cf4f9c31cd74c40f81c841fd1f432e95"}}

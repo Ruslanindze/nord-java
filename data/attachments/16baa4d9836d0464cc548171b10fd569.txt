@@ -1,0 +1,1 @@
+EndpointRs(result=ERROR, message=token: не должно равняться null)

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd0d0daf-eb5d-4b39-be73-2fbbb10450d8" name="Changes" comment="Правка по ревью">
+      <change afterPath="$PROJECT_DIR$/.nojekyll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-maven.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-e10ef08e2435570d7f42.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-e10ef08e2435570d7f42.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/apache-maven-fluido-2.0.0-M9.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/print.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/01506cf0ed32517f9d42ca34fbe8357a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/04c680c8b6911f61cbc21e1fe5b384ac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/05883fb2f9f3ffd32c4a50aa365d47b9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/05b4d8a65a5a12a0950a5fee421621c4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/073cc05a3477efa440dba79fd32b9a8a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/09318667a57de7eb737037b16bef704a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0b74c3b7ae40ece59e8fb7dbd06fad68.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0bc37cf1236b8d8a52458441d787f72b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0c991b2541e5177e98878dfc75eafc02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0cb7661f56ee7d0eafba1794c7d7b9c9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0d0b9d7cf7cc42db47a31064719ec129.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0ead1ebac69d598e3cc4238d78d27d90.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0f258bf6a1af68ccacd3c1af79c84563.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/0fe324f6cd70b21f99b7d9e5b8bcf1a2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/110aca48d547709843aad9a15939ed50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/11229a1adffba189bf6ef3288ee9bd0d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/11a43569a9d95bae73e678e59f7f75e5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/135618a0f6a355868e1470338305d712.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/137d8ac6772cdac708abc58d9622f907.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/14acfc74c110afa5114f1cfb97ba0446.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/16baa4d9836d0464cc548171b10fd569.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/183a0cf74ad606d9e7f42ca93991fd7b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/1ed1b676b8c1b1da8c23c14663ab819c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/1f7af1b73bdfd042d1c8f7b002817d7d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/1fcaf5a1e267365a4e7f1719401df1d6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/20bc65b2978df612df17a8c5db7770d1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/20f4f028b8e2d3d3f7f2f2b4e0f0e590.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/21a618bed17a4ff4995230909cf92000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/232409d6ed406f6ee02ab2546d3ca4cd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/258f54fc7a9c6df21e9f6f8f1b0d1b93.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/25c8c66bf2d7720c71ee1be6c44de363.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/27755ddf72d8a0213c5e17ec28d6d6c1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/27e130b62c0d438250db833f76882625.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/284b77a6bd33f29b4fea27f34aa2825e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2b818152697e8f0f6c8d494a4c8fc338.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2c134d592cd7121195e40370df8c3aa1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2c3a5c751fb53d40a326274ff82c8c7d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2d76bb5fa16777352ce26a8f14566660.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2daf47cc427aa076cd7bef038936d345.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/2ef5721e0ac81601995a7b32b9cf9776.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/30a5e25c8ee5a792dfb00e0d83696847.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/318ca97e94bd2c74638a5ca533638a02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/339bd77c1469f527985cd0584d5c56e2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/34f49834fd1fb764fae5aeecffeea738.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/353d7e406da2bfd0e6b1a807b8274dca.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/356e8eeb433e47a2c33617e1e8cd80db.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/36223759165ddf57aa9071fb4a4b9c40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/386f7ffec7e086ca5e3509bfcd5c095d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/3a1c3f93bc50348a3da8e19dc709c64c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/3bb187b619e2535ef022186fcffe3f6c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/3d65f3503b2e5e88a7c4a7b1fb506902.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/415d30c1da5ece2ba3f544724d07f2ac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4200ee50809c82b4ee0c933492800d52.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/436b7bb86d25c96be8f8cfdfda3c805e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/445985497e584814b62674b368bcc6d5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4473deb3f4c8b06e6af12f728be35a51.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/462f657b79bb6ab72bbe33fc59564042.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/484a2e08f1631ebc2e52acc0f075576f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4852022f73cf494b109319b244032712.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/489fec03577e1fb922e54bbcce480df5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/49bb24e1ae1a718993c4b8a52ec6e749.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4a251eab6c93855a4206c704c8c3244d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4b67d8696e7c5fc028c3066b16b1aedc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4b83d375b6d7471c0d46da228b151485.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4c2ff67786471e7540b7fe2ef6ca6c6a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/4d1e51fc79d9fa0c985218e5c7db7e5a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/5118c92d7acdee12638c3ac329ea95b2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/527a4a576ae686a8031c8992ffcaf46b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/538126c2a6b902cfafe1659e64f69154.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/538dff1f5d9c9b7de74ab514edfaf5ef.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/54eb588fa5e5a97291c04a20b0c92401.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/58f857444c4f93620a0a2f9fbced4c4a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/5ad9f162413b8cd0785e9a52580be04f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/5d9367ac0a690b7aa01c9a6bb8eb0b5b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/5ecaf42ddbf3ff203410ee8911943e48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/5eef51a7fb1203fe8797d6073d6c483d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6515a366c97d11cb1d5587bb1876be05.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/66335ae2c6253c23d878c5628cde07c3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/67336dff84febed1cdda3005f04a54bd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/67c62ce1707bbf0517b0a5e8828530d2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6870d1fc378579aadfb2553f1cf7e471.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/68e1bc03a3b050b8f51e7b1bdfe3d531.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/69fd1a5e772a1895692bd66905f36884.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6a05234d2e0b762587a3ce4cecbe3bc5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6aa3d71ab64c4bdd22b8a01393c18732.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6c02133180a718b9144231885aae68c9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/6ea08bd717573bd6103eb5f8bf5f9319.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/70383f5bcc557ff2833293cb602b0912.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/705cbc3a83754648ef82e882d50ec849.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7308cdd96f41f0c60b5b85e5af56f9b9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/732ff1c20bf2b794a3e668b96f3b4cad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/75b6b4b332ba409c4338ec66e792e669.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7694758e635d34e34e1ec8f51fc8d757.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/76c19ddcac67cdd66fc15950d5ea453a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7981bdea6008ed15b32b1d21e2056c13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/79ae8411c518d4d5d87ad72fd19164bd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7acfcc7dd94317b9c2b5d0987f6b6292.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7b339b84c190fdde13001ce315b9772d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/7eb4bb97467d1802521b044a47b1c9a2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/808fcf215fa5c697c6fde748e032b359.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/82ba46d283e098f54f8ba6561eba5bdf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/870586b6009fc7d1426b90e600c5ea30.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/87a99148d9c0e3d75fc416bc5f808b99.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/8eb0160bf564d70a12230c0b6ee49b17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/8fc27a1afd180cfbe306b8d250187e8f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/90571a8e4cf94978ae881bda1b30cca5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/92ed9ff14af00df40f87f1b9db485a25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/939a5b49e8cbfaa71b4c837ec2ecfcec.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/94937bd76f619216434322c7ccc7e4f0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/9a64ad423ec75db960e3846b8780f092.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/9ab997152381797ada4bc230567b022f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/9ee91ff952b2f82182c608b3e782af4b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/9f06fcfc996ba365d3f9733620e3b4f2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a33c3e0d96c3eda4500e7e45a4da2482.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a3b0316c36f71547a50293ba081dbfd8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a40fc82963d80a2ee5942a1bc2646af4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a47ba9dddc6902b37254673347e7ea7a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a4a7f670fe45671b963f103a10011585.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a53c60358ca100d5380cb0fb0d766910.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a60bc68816d3e8a24c03269c7f5ae403.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a7cf6cbc771575bb3cd4b7d5c65f592e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a7e90841549d867d3659c7642061b876.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a8e2c01a023f104c5b1663b0b916fc5f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/a907ff4337f951ffbcea1ad7949aa0a3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ab3cce5869e8e5623817023dc0db77fe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/abe58a78dadda49e30330aa8498c63f4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/addb39b86f702198633bbf3dc34ddf3b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ae53fe54458221e87e784c12101bc090.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b05a47917b34c389aded102d93b7a686.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b30db8f2b6e905e84f76ca71b3f6a7d2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b346c86c4ad38df70d642aba93f8eaf0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b36432cf32a5fdd20424ce23e53ad504.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b48c513f77071cb07ad27785ec4d34db.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/b94899704823e7bf14828be84661d632.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ba7527c826fa7760446017f589397b16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bb91a2ab2c4cf66787d0b1ea651db09a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bc1d870a7ca82d9358c59e330b955855.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bc4f68ae408dc859fa69a27a534ced1a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bd1d7c20ff5babaeade3ee126c29a295.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/be241217315279e478332b985e306cb7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/be411bca0f5b96c4da954f8102536988.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bef26da4642bb8e8a945e31c20a3a0f6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/bf8810054ccb70c6595d54a9a6c9a35b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c2d178b34a21da3a11044786de6ca466.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c3303f42f9a00b2d3abd380bb3f22023.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c4472565631265f8c3af9cdd2ab63563.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c46d1890970a4a5275476482f449a141.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c791866aa91b0acda642a7a3d1834abf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c8a06fd2b6b3f070f44a5c5ea3b03ccd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c94f671e015a7ac5bfff1e074e11f32c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/c9a1399caf62da58ca70ec0d9bab30df.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ce32660c438462a1e59aaca8d0ff8604.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/cedbe5ebbdd22f52b4dd4eafac60ef9f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d03ec449757b4df9f5d7fff0f48eca18.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d143e37dc6474506f37fb94e5734b6f7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d37425ab7d78b2e60bc57cb073a3638b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d3a7f855062c95fbf28a7bd45364e762.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d442728afcee899a81a982c9a2edada0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d4a5bb49af473fa66174861dac654d68.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d5a38a054f4d3f4c81d8d25605c7695c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d648c18adec96b2982a9716df6eacfbd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d774fa9997c1a379d2484e59b1de7e07.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d7e1ba210bd12d67e5117f1800bb4dd9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d889278564b7f27d3a804b774ec36d1f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d9465da6ea173e833dc63d6d405955b1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/d98e1d36ec367508dc1d850fc713606e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/dbded88254207a3aabfa6959b86389db.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/dc713d8aa00c0a0fa15988d210d0ea4a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/dcf956f33af4d33271f4ff6f1bf5ac5a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/dd3f3136d1d7bc9860e8f72a79d88430.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/de7aaaaba8330cc462b0e6c791d03d34.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/dfc1b725f69c24774d99f714fd5d7f7a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/e243be705163542c4546a82f9f936e02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/e2dbefa13265f4655f95adbc8cce6478.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/e3150c1d08534700ecaa9ce2c2144d48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/e47d4bb55756250c728e023f78acf0e4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/e7c20126cbb5986aab67bea3dec3b42a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/eba5cdf629d766399d8fb9b516dc8a4b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ec6ba1ca57dbb5f3ec46f84e4eaf8287.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ee89f4d74391304518f7c0e68e78e0e9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/eea83ef9d7c4843211060e7ef44da223.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ef1f26905b09f85e1026c4169adf86e3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/eff7e0ac5603cc862e736a0e4b91cfc4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f1017fd08fd562d5e53b26440e79ed6e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f264726889e2c816f70a8c310dd0edbc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f3460dbdda600e8f04fea1918f47d3fe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f625062f4c84fcda778429e38c7c4119.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f64dc52b019e66c61c41338d17f78b23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f897234f5cef8e9b9eddc7bdd82e4bc1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/f8f27c7fd70cec296da19e446a0e5948.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/fa7e5603d344a5254054eb786413ee81.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/fbb46c1435902a4819a7570267aa9742.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/fdd8811acff1722636c76b1e3be30315.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/fe067e04f1883c5e4b148a170f88ebdc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/attachments/ffb9c0d64b17cdf66107eaada5f2cad7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/2bf9fbff-3f17-451c-9a57-b1318e673b5d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/2cf61231-5c36-4b7f-97d8-ad63ff9d05b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/33b80681-2e9b-425b-8ba5-c857968543f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/505301b8-3388-47b8-a15b-e4b10dfda7a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/a1f598b2-1338-48d1-89f1-129a2c195f74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/history/bcca8ea1-edde-43b0-b56e-a79b3057e7a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/29fdb6aa935f4520421b94e8de9b7408.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/459a42d76a89d5359534e1e808fc3655.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/572e4136d035af43e87636f94e27e8e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/649ac33cfcdf3e8bc34e4a0342f67ab7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/6de8e3b6d0278359dcf3f4c02f97dfc1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/743e734f4ebc3e6c149670108185e5a1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/8d0f8c590df4f33b0a2b775bbde7d7d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/962555b58bf41e0d2c0927322a1f3ef9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/aae2bdd6bf460a77e268479908a9caf7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/b3bd5f6b34d1dacaa943bf5917688490.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/d62505d8c7ef117ebd8c2504ce015206.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-env-groups/e96b4c3cad8af4a3c87fc1f6d50325d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/149cefb29be492462b954cd7cbe4f8c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/1d56f50d83e80272d012a0f5bb9d12a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/23718fbdfc890a99489f505ba1816c09.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/24ca79bd88d63cbb3734e4451a7eb585.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/2ad4ba27cae8f9130f93827bff625399.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/30104c5bbea809bcb6e5a0b09816038d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/4275680f6095a6ffd6ef541909fe8b9c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/4566a012ee3f1980c0f7a51567bf6585.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/4dbce0ea9f59874db91e4c5d381e3ba8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/63a6a1b08e6925af56ba3de8ccd3f756.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/84cbfab62e9d384248ccb1b6e41cf835.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/855650b524ddb49617a368adb4f0b76d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/92b0a6e0db5ac8317d3ad1343d550029.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/932534764699aad44694c82437342c4c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/96e8d0fc5719407fe048383a05b15b3e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/97a23f32d80efffcc7fb52889c5e107d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/b60358b42f6e5ef606294f3accbe16e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/b823076871b48f3e684b3a626fea04f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/bab3c791b731e2f5ebdaa8a2b7780e6a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/bab5fa7dcf7fcbca38caaca5927b5d05.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/c6b28b555dece5b2d70885740c25d610.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/cf4f9c31cd74c40f81c841fd1f432e95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/d60c099dc4655d37e725dd2a3b523a1c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/dc81662c532d62653376b2a99fd7bdc7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test-results/ef20474675b80abc18ee22f151a54681.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/accessories-text-editor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/add.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/apache-maven-project-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/application-certificate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/contact-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/document-properties.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/drive-harddisk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/fix.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon_error_sml.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon_help_sml.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon_info_sml.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon_success_sml.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon_warning_sml.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/image-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/internet-web-browser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/build-by-maven-black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/build-by-maven-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logos/maven-feather.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/network-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/package-x-generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/profiles/pre-release.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/profiles/retired.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/profiles/sandbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/remove.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/rss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/update.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/window-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/apache-maven-fluido-2.0.0-M9.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/allure_environment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/charts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/nav.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/pie_chart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/resolution-categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/search-index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/statistic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/default/variables.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/environments.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/globals.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/nav.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/pie_chart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/quality-gate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/resolution-categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/search-index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/statistic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/timeline.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/tree-filters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/widgets/variables.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="allure-report" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3LagNxgLG6XeF3wNxnJm3qfm4Tk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.wiremock: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Positive.shouldReturnOkWhenLoggingInWithNewValidToken.executor": "Run",
+    "JUnit.EndpointActionTest$NegativeAction.shouldReturnClientErrorWhenActionWithNoAuthToken.executor": "Run",
+    "JUnit.EndpointActionTest$NegativeAction.shouldReturnOkWhenActionWithAuthToken.executor": "Run",
+    "JUnit.EndpointActionTest$PositiveAction.shouldReturnOkWhenActionWithAuthToken.executor": "Run",
+    "JUnit.EndpointActionTest$PositiveAction.shouldReturnOkWhenMultipleActionWithAuthToken.executor": "Run",
+    "JUnit.EndpointActionTest.executor": "Run",
+    "JUnit.EndpointE2ETest.e2eTest.executor": "Run",
+    "JUnit.EndpointE2ETest.executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnClientErrorWhenLoggingInWithDuplicateToken.executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnClientErrorWhenLoggingInWithInvalidToken (1).executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnClientErrorWhenLoggingInWithInvalidToken.executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnClientErrorWhenLoggingInWithNullToken.executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnServerErrorWhenLoggingInWithValidToken (1).executor": "Run",
+    "JUnit.EndpointLoginTest$Negative.shouldReturnServerErrorWhenLoggingInWithValidToken.executor": "Run",
+    "JUnit.EndpointLoginTest$Positive.shouldReturnOkWhenLoggingInWithNewValidToken.executor": "Run",
+    "JUnit.EndpointLoginTest$PositiveLogin.shouldReturnOkWhenLoggingInWithNewValidToken.executor": "Debug",
+    "JUnit.EndpointLoginTest.executor": "Run",
+    "JUnit.EndpointLogoutTest$PositiveLogout$NegativeLogout.shouldReturnClientErrorWhenLoggingInWithDuplicateToken.executor": "Run",
+    "JUnit.EndpointLogoutTest$PositiveLogout$NegativeLogout.shouldReturnClientErrorWhenSessionIsClosed.executor": "Run",
+    "JUnit.EndpointLogoutTest$PositiveLogout.shouldReturnOkWhenLogoutWithAuthToken.executor": "Run",
+    "JUnit.EndpointLogoutTest.executor": "Run",
+    "Maven.nord-java [-Dapi.key=qazWSXedc,clean...].executor": "Run",
+    "Maven.nord-java [-Dapi.key=qazWSXedc,test].executor": "Run",
+    "Maven.nord-java [clean,test...].executor": "Run",
+    "Maven.nord-java [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "qa",
+    "git.auto.fetch.suggestion.counter": "1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/ItPath/Projects/Java/tests/nord-codes/nord-java",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ItPath\Projects\Java\tests\nord-codes\nord-java" />
+      <recent name="D:\ItPath\Projects\Java\tests\nord-codes\nord-java\wiremock\mappings" />
+      <recent name="D:\ItPath\Projects\Java\tests\nord-codes\nord-java\wiremock" />
+      <recent name="D:\ItPath\Projects\Java\tests\nord-codes\nord-java\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+      <command value="mvn -Dapi.key=qazWSXedc test" />
+      <command value="mvn clean test -Dapi.key=qazWSXedc" />
+      <command value="mvn -Dapi.key=qazWSXedc clean test -Dgroups=smoke allure:report" />
+      <command value="mvn -Dapi.key=qazWSXedc clean test allure:report" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.EndpointLoginTest">
+    <configuration name="EndpointE2ETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nord-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nord.codes.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="PACKAGE_NAME" value="nord.codes.tests" />
+      <option name="MAIN_CLASS_NAME" value="nord.codes.tests.EndpointE2ETest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dapi.key=qazWSXedc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EndpointLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nord-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nord.codes.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="PACKAGE_NAME" value="nord.codes.tests" />
+      <option name="MAIN_CLASS_NAME" value="nord.codes.tests.EndpointLoginTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dapi.key=qazWSXedc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="nord-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -Dapi.key=qazWSXedc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="-Dapi.key=qazWSXedc" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EndpointLoginTest" />
+        <item itemvalue="JUnit.EndpointE2ETest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd0d0daf-eb5d-4b39-be73-2fbbb10450d8" name="Changes" comment="" />
+      <created>1793697558188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793697558188</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Инициализация проекта с тестами" />
+    <MESSAGE value="Переезд на maven и java_17 + тесты login" />
+    <MESSAGE value="Добавлены негативные тесты login" />
+    <MESSAGE value="Добавлен клиент для работы с endpoint запросами" />
+    <MESSAGE value="Добавлены остальные тесты и Allure с шагами" />
+    <MESSAGE value="Добавлено логирование и тэги" />
+    <MESSAGE value="Переезд на maven и java_17 + тесты login" />
+    <MESSAGE value="Добавлены негативные тесты login" />
+    <MESSAGE value="Добавлен клиент для работы с endpoint запросами" />
+    <MESSAGE value="Добавлены остальные тесты и Allure с шагами" />
+    <MESSAGE value="Добавлено логирование и тэги" />
+    <MESSAGE value="Снижение Junit6 до 5 и указаны тесты регресс" />
+    <MESSAGE value="Правка по ревью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка по ревью" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

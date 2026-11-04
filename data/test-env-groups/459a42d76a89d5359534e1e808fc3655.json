@@ -1,0 +1,1 @@
+{"id":"459a42d76a89d5359534e1e808fc3655","fullName":"nord.codes.tests.EndpointLoginTest$NegativeLogin.shouldReturnClientErrorWhenLoggingInWithInvalidToken","name":"Невалидный токен E61CAABB5C34AC2877389D4D5BAD400","status":"passed","testResultsByEnv":{"default":"97a23f32d80efffcc7fb52889c5e107d"}}
