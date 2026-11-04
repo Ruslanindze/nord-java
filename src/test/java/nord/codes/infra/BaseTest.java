@@ -6,8 +6,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.client.RestTestClient;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 
 import java.util.Objects;
 
@@ -19,6 +17,7 @@ public abstract class BaseTest {
 
     protected RestTestClient restTestClient;
     protected EndpointClient endpointClient;
+    protected EndpointAssertions endpointAssertions;
 
     @BeforeEach
     protected void setUp() {
@@ -36,5 +35,7 @@ public abstract class BaseTest {
                 .build();
 
         endpointClient = new EndpointClient(restTestClient);
+
+        endpointAssertions = new EndpointAssertions();
     }
 }

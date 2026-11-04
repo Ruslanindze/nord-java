@@ -38,3 +38,4 @@ out/
 
 nord-java.iml
 /target/
+/.allure/
