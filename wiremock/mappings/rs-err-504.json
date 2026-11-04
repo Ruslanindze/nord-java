@@ -2,10 +2,10 @@
   "priority": 1,
   "request": {
     "method": "POST",
-    "urlPattern": "/auth|/doAction",
+    "urlPattern": "/(auth|doAction)",
     "bodyPatterns": [
       {
-        "matches": ".*token=[0-9A-Z]*ERR503(&.*|$)"
+        "matches": ".*token=[0-9A-Z]*BAD504(&.*|$)"
       }
     ]
   },

@@ -8,4 +8,6 @@ public interface TestTags {
     // Позитивные / Негативные
     String POSITIVE = "positive";
     String NEGATIVE = "negative";
+
+    String E2E = "e2e";
 }
