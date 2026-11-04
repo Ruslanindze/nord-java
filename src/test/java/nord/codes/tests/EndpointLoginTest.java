@@ -128,7 +128,6 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
             EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(token, Action.LOGIN);
 
             // Then
-            String message = "Token '%s' already exists".formatted(TestData.VALID_TOKEN);
             endpointAssertions.assertErrorAction(actualRs, httpStatus, httpStatus.getReasonPhrase());
         }
 

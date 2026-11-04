@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import nord.codes.dto.EndpointRs;
 import nord.codes.infra.Action;
 import nord.codes.infra.ApiPaths;
-import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.client.EntityExchangeResult;
 import org.springframework.test.web.servlet.client.RestTestClient;
 import org.springframework.util.LinkedMultiValueMap;
@@ -41,8 +40,7 @@ public class EndpointClient {
             log.info("Статус ответа: {}", result.getStatus());
 
             if (result.getResponseBody() != null) {
-                Allure.attachment("Response Body",
-                        MediaType.APPLICATION_JSON_VALUE, result.getResponseBody().toString());
+                Allure.attachment("Response Body", result.getResponseBody().toString());
                 log.info("Тело ответа: {}", result.getResponseBody());
             }
 
