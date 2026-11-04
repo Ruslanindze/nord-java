@@ -1,6 +1,7 @@
 package nord.codes.infra;
 
 import lombok.extern.slf4j.Slf4j;
+import nord.codes.infra.clients.EndpointClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -17,6 +18,7 @@ public abstract class BaseTest {
     protected String xApiKey;
 
     protected RestTestClient restTestClient;
+    protected EndpointClient endpointClient;
 
     @BeforeEach
     protected void setUp() {
@@ -32,13 +34,7 @@ public abstract class BaseTest {
                 .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE)
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
                 .build();
-    }
 
-    protected MultiValueMap<String, String> createFormUrlEncodedValue(String token, Action action) {
-        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
-        formData.add("token", token);
-        formData.add("action", action.name());
-
-        return formData;
+        endpointClient = new EndpointClient(restTestClient);
     }
 }

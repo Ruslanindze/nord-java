@@ -1,7 +1,7 @@
 package nord.codes.tests;
 
 import lombok.extern.slf4j.Slf4j;
-import nord.codes.dto.rs.EndpointRs;
+import nord.codes.dto.EndpointRs;
 import nord.codes.infra.Action;
 import nord.codes.infra.ApiPaths;
 import nord.codes.infra.BaseTest;
@@ -12,8 +12,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.http.HttpStatus;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
+import org.springframework.test.web.servlet.client.EntityExchangeResult;
 
 import java.util.stream.Stream;
 
@@ -29,14 +28,7 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
     @AfterEach
     void logoutToken() {
         if (activeToken != null) {
-            try {
-                restTestClient.post()
-                        .uri(ENDPOINT)
-                        .body(createFormUrlEncodedValue(activeToken, Action.LOGOUT))
-                        .exchange();
-            } catch (Exception e) {
-                log.warn("Не удалось выполнить LOGOUT для токена {}.", activeToken, e);
-            }
+            endpointClient.sendAction(activeToken, Action.LOGOUT);
         }
     }
 
@@ -54,28 +46,25 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
         void shouldReturnOkWhenLoggingInWithNewValidToken(String token) {
             // Given
             activeToken = token;
-            MultiValueMap<String, String> formData = createFormUrlEncodedValue(token, Action.LOGIN);
 
-            // When and Then
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().isOk()
-                    .expectBody(EndpointRs.class)
-                    .value(rs -> {
-                        assertThat(rs)
-                                .as("Response %s should not be null".formatted(ENDPOINT))
-                                .isNotNull();
-                        assertThat(rs.getResult())
-                                .as("Result %s should be OK".formatted(ENDPOINT))
-                                .isEqualTo("OK");
-                        assertThat(rs.getMessage())
-                                .as("Message %s should be null".formatted(ENDPOINT))
-                                .isNull();
-                    });
+            // When
+            EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(activeToken, Action.LOGIN);
 
+            // Then
+            assertThat(actualRs.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, HttpStatus.OK))
+                    .isEqualTo(HttpStatus.OK);
+
+            EndpointRs actualEndpointRs = actualRs.getResponseBody();
+            assertThat(actualEndpointRs)
+                    .as("Response %s should not be null".formatted(ENDPOINT))
+                    .isNotNull();
+            assertThat(actualEndpointRs.getResult())
+                    .as("Result %s should be OK".formatted(ENDPOINT))
+                    .isEqualTo(HttpStatus.OK.getReasonPhrase());
+            assertThat(actualEndpointRs.getMessage())
+                    .as("Message %s should be null".formatted(ENDPOINT))
+                    .isNull();
         }
     }
 
@@ -88,29 +77,27 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
         @Test
         void shouldReturnClientErrorWhenLoggingInWithNullToken() {
             // Given
-            MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
-            formData.add("action", Action.LOGIN.name());
+            String token = null;
 
-            // When and Then
+            // When
+            EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(token, Action.LOGIN);
+
+            // Then
+            assertThat(actualRs.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, HttpStatus.BAD_REQUEST))
+                    .isEqualTo(HttpStatus.BAD_REQUEST);
+
+            EndpointRs actualEndpointRs = actualRs.getResponseBody();
             String message = "token: не должно равняться null";
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().isEqualTo(HttpStatus.BAD_REQUEST)
-                    .expectBody(EndpointRs.class)
-                    .value(rs -> {
-                        assertThat(rs)
-                                .as("Response %s should not be null".formatted(ENDPOINT))
-                                .isNotNull();
-                        assertThat(rs.getResult())
-                                .as("Result %s should be ERROR".formatted(ENDPOINT))
-                                .isEqualTo("ERROR");
-                        assertThat(rs.getMessage())
-                                .as("Message %s should be %s".formatted(ENDPOINT, message))
-                                .contains(message);
-                    });
+            assertThat(actualEndpointRs)
+                    .as("Response %s should not be null".formatted(ENDPOINT))
+                    .isNotNull();
+            assertThat(actualEndpointRs.getResult())
+                    .as("Result %s should be ERROR".formatted(ENDPOINT))
+                    .isEqualTo("ERROR");
+            assertThat(actualEndpointRs.getMessage())
+                    .as("Message %s should be %s".formatted(ENDPOINT, message))
+                    .contains(message);
         }
 
         @DisplayName("Ошибка клиента при авторизации | дубликат")
@@ -118,66 +105,58 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
         void shouldReturnClientErrorWhenLoggingInWithDuplicateToken() {
             // Given
             activeToken = TestData.VALID_TOKEN;
-            MultiValueMap<String, String> formData = createFormUrlEncodedValue(activeToken, Action.LOGIN);
 
             // When
             // 1-й запрос
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().isOk();
+            EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(activeToken, Action.LOGIN);
+            assertThat(actualRs.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, HttpStatus.OK))
+                    .isEqualTo(HttpStatus.OK);
+            // 2-й запрос (дубль)
+            EntityExchangeResult<EndpointRs> actualRs2 = endpointClient.sendAction(activeToken, Action.LOGIN);
 
             // Then
-            // 2-й запрос - дубликат
+            assertThat(actualRs2.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, HttpStatus.CONFLICT))
+                    .isEqualTo(HttpStatus.CONFLICT);
+
+            EndpointRs actualEndpointRs2 = actualRs2.getResponseBody();
             String message = "Token '%s' already exists".formatted(TestData.VALID_TOKEN);
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().isEqualTo(HttpStatus.CONFLICT)
-                    .expectBody(EndpointRs.class)
-                    .value(rs -> {
-                        assertThat(rs)
-                                .as("Response %s should not be null".formatted(ENDPOINT))
-                                .isNotNull();
-                        assertThat(rs.getResult())
-                                .as("Result %s should be ERROR".formatted(ENDPOINT))
-                                .isEqualTo("ERROR");
-                        assertThat(rs.getMessage())
-                                .as("Message %s should be %s".formatted(ENDPOINT, message))
-                                .contains(message);
-                    });
+            // проверка дубля
+            assertThat(actualEndpointRs2)
+                    .as("Response %s should not be null".formatted(ENDPOINT))
+                    .isNotNull();
+            assertThat(actualEndpointRs2.getResult())
+                    .as("Result %s should be ERROR".formatted(ENDPOINT))
+                    .isEqualTo("ERROR");
+            assertThat(actualEndpointRs2.getMessage())
+                    .as("Message %s should be %s".formatted(ENDPOINT, message))
+                    .contains(message);
         }
 
         @ParameterizedTest(name = "Ошибка клиента при авторизации | {0}")
         @MethodSource
         void shouldReturnClientErrorWhenLoggingInWithInvalidToken(String token, String message) {
-            // Given
-            activeToken = token;
-            MultiValueMap<String, String> formData = createFormUrlEncodedValue(token, Action.LOGIN);
+            // Given - token
 
-            // When and Then
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().is4xxClientError()
-                    .expectBody(EndpointRs.class)
-                    .value(rs -> {
-                        assertThat(rs)
-                                .as("Response %s should not be null".formatted(ENDPOINT))
-                                .isNotNull();
-                        assertThat(rs.getResult())
-                                .as("Result %s should be ERROR".formatted(ENDPOINT))
-                                .isEqualTo("ERROR");
-                        assertThat(rs.getMessage())
-                                .as("Message %s should be %s".formatted(ENDPOINT, message))
-                                .contains(message);
-                    });
+            // When
+            EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(token, Action.LOGIN);
+
+            // Then
+            assertThat(actualRs.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, HttpStatus.BAD_REQUEST))
+                    .isEqualTo(HttpStatus.BAD_REQUEST);
+
+            EndpointRs actualEndpointRs = actualRs.getResponseBody();
+            assertThat(actualEndpointRs)
+                    .as("Response %s should not be null".formatted(ENDPOINT))
+                    .isNotNull();
+            assertThat(actualEndpointRs.getResult())
+                    .as("Result %s should be ERROR".formatted(ENDPOINT))
+                    .isEqualTo("ERROR");
+            assertThat(actualEndpointRs.getMessage())
+                    .as("Message %s should be %s".formatted(ENDPOINT, message))
+                    .contains(message);
         }
 
         static Stream<Arguments> shouldReturnClientErrorWhenLoggingInWithInvalidToken() {
@@ -191,30 +170,26 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
         @ParameterizedTest(name = "Ошибка сервера при авторизации | {0}")
         @MethodSource
         void shouldReturnServerErrorWhenLoggingInWithValidToken(String token, HttpStatus httpStatus) {
-            // Given
-            activeToken = token;
-            MultiValueMap<String, String> formData = createFormUrlEncodedValue(token, Action.LOGIN);
+            // Given - token
 
-            // When and Then
-            restTestClient.post()
-                    .uri(ENDPOINT)
-                    .body(formData)
-                    .exchange()
-                    // Then
-                    .expectStatus().isEqualTo(httpStatus)
-                    .expectBody(EndpointRs.class)
-                    .value(rs -> {
-                        assertThat(rs)
-                                .as("Response %s should not be null".formatted(ENDPOINT))
-                                .isNotNull();
-                        assertThat(rs.getResult())
-                                .as("Result %s should be ERROR".formatted(ENDPOINT))
-                                .isEqualTo("ERROR");
-                        assertThat(rs.getMessage())
-                                .as("Message %s should be %s".formatted(ENDPOINT, httpStatus.getReasonPhrase()))
-                                .contains(httpStatus.getReasonPhrase());
-                    });
+            // When
+            EntityExchangeResult<EndpointRs> actualRs = endpointClient.sendAction(token, Action.LOGIN);
 
+            // Then
+            assertThat(actualRs.getStatus())
+                    .as("Response status %s should be %s".formatted(ENDPOINT, httpStatus))
+                    .isEqualTo(httpStatus);
+
+            EndpointRs actualEndpointRs = actualRs.getResponseBody();
+            assertThat(actualEndpointRs)
+                    .as("Response %s should not be null".formatted(ENDPOINT))
+                    .isNotNull();
+            assertThat(actualEndpointRs.getResult())
+                    .as("Result %s should be ERROR".formatted(ENDPOINT))
+                    .isEqualTo("ERROR");
+            assertThat(actualEndpointRs.getMessage())
+                    .as("Message %s should be %s".formatted(ENDPOINT, httpStatus.getReasonPhrase()))
+                    .contains(httpStatus.getReasonPhrase());
         }
 
         static Stream<Arguments> shouldReturnServerErrorWhenLoggingInWithValidToken() {
