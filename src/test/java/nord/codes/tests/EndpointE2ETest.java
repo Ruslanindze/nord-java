@@ -9,13 +9,17 @@ import nord.codes.infra.BaseTest;
 import nord.codes.infra.TestData;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.web.servlet.client.EntityExchangeResult;
 
 import java.util.concurrent.atomic.AtomicReference;
 
+import static nord.codes.infra.TestTags.E2E;
+
 @Slf4j
+@Tag(E2E)
 @DisplayName("E2E сценарий")
 public class EndpointE2ETest extends BaseTest implements ApiPaths {
     private String activeToken;

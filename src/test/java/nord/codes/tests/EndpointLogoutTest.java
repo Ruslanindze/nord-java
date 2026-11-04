@@ -15,8 +15,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.web.servlet.client.EntityExchangeResult;
 
-import static nord.codes.infra.TestTags.NEGATIVE;
-import static nord.codes.infra.TestTags.POSITIVE;
+import static nord.codes.infra.TestTags.*;
 
 @Slf4j
 @DisplayName("Завершение сессии пользователя")
@@ -80,6 +79,7 @@ public class EndpointLogoutTest extends BaseTest implements ApiPaths {
             }
 
             @Test
+            @Tag(SMOKE)
             @DisplayName("Завершение сессии с не авторизованным токеном")
             void shouldReturnClientErrorWhenSessionIsAlreadyClosed() {
                 // Given

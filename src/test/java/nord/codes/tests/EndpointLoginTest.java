@@ -16,8 +16,7 @@ import org.springframework.test.web.servlet.client.EntityExchangeResult;
 
 import java.util.stream.Stream;
 
-import static nord.codes.infra.TestTags.NEGATIVE;
-import static nord.codes.infra.TestTags.POSITIVE;
+import static nord.codes.infra.TestTags.*;
 
 
 @Slf4j
@@ -35,6 +34,7 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
 
     @Nested
     @Tag(POSITIVE)
+    @Tag(SMOKE)
     @DisplayName("Успешная авторизация")
     class PositiveLogin {
 
@@ -77,6 +77,7 @@ public class EndpointLoginTest extends BaseTest implements ApiPaths {
         }
 
         @Test
+        @Tag(SMOKE)
         @DisplayName("Токен уже авторизован")
         void shouldReturnClientErrorWhenLoggingInWithDuplicateToken() {
             // Given

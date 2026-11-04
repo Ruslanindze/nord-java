@@ -12,8 +12,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.web.servlet.client.EntityExchangeResult;
 
-import static nord.codes.infra.TestTags.NEGATIVE;
-import static nord.codes.infra.TestTags.POSITIVE;
+import static nord.codes.infra.TestTags.*;
 
 @Slf4j
 @DisplayName("Действие")
@@ -30,6 +29,7 @@ public class EndpointActionTest extends BaseTest implements ApiPaths {
 
     @Nested
     @Tag(POSITIVE)
+    @Tag(SMOKE)
     @DisplayName("Успешное действие")
     class PositiveAction {
 
