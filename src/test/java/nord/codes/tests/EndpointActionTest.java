@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.client.EntityExchangeResult;
 import static nord.codes.infra.TestTags.*;
 
 @Slf4j
+@Tag(REGRESS)
 @DisplayName("Действие")
 public class EndpointActionTest extends BaseTest implements ApiPaths {
     private String activeToken;

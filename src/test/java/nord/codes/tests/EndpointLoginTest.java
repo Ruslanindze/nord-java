@@ -20,6 +20,7 @@ import static nord.codes.infra.TestTags.*;
 
 
 @Slf4j
+@Tag(REGRESS)
 @DisplayName("Аутентификация")
 public class EndpointLoginTest extends BaseTest implements ApiPaths {
     private String activeToken;

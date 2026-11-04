@@ -18,6 +18,7 @@ import org.springframework.test.web.servlet.client.EntityExchangeResult;
 import static nord.codes.infra.TestTags.*;
 
 @Slf4j
+@Tag(REGRESS)
 @DisplayName("Завершение сессии пользователя")
 public class EndpointLogoutTest extends BaseTest implements ApiPaths {
 

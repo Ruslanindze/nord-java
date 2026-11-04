@@ -18,6 +18,7 @@
         <java.version>17</java.version>
         <allure.version>3.0.0</allure.version>
         <aspectj.version>1.9.25</aspectj.version>
+        <junit-jupiter.version>5.14.4</junit-jupiter.version>
     </properties>
 
     <dependencies>
